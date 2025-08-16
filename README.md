@@ -90,15 +90,19 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
 
 ## Notes
 
-- If NLTK stopwords are not available, the notebooks download them at runtime.
-- If your CSVs are already split into train/test, the notebooks will use them as provided.
-- For larger datasets, consider increasing epochs and tuning hyperparameters further for the LSTM model.
+- The dataset (~27 MB) was already split into **train** and **test** sets.  
+  I renamed the files to `train_data.csv` and `test_data.csv` instead of re-splitting.  
+- If NLTK stopwords are not available, the notebooks download them at runtime.  
+- If your CSVs are already split into train/test, the notebooks will use them as provided.  
+- Slight overfitting was mitigated in the LSTM model by tuning hyperparameters and applying early stopping.  
+- For larger datasets, consider increasing epochs and tuning hyperparameters further for the LSTM model.  
 - Interactive prediction cells are included in both notebooks for quick testing.
-
----
+- The ML approach reached ~88% accuracy, while the DL approach reached ~83%.  
+  This is because the dataset (~27 MB) is moderately sized, ideal for TF-IDF + Logistic Regression,  
+  But relatively small for training LSTM embeddings from scratch, making the ML model more effective here.
 
 ## Author
 
 [AnthropoidFHJ](https://github.com/AnthropoidFHJ)  
-Name : Ferdous Hasan  
-Date: August 16, 2025
+**Name:** Ferdous Hasan  
+**Date:** August 16, 2025
