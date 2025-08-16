@@ -1,12 +1,10 @@
 # Sentiment Classification: ML and DL Approaches
 
 This project demonstrates sentiment classification on movie reviews using two parallel approaches:
-- **Traditional Machine Learning:** TF-IDF features + Logistic Regression (with hyperparameter search)
+- **Machine Learning:** TF-IDF features + Logistic Regression (with hyperparameter search)
 - **Deep Learning:** Keras Bidirectional LSTM on tokenized/padded text (with hyperparameter tuning and early stopping)
 
 All code is provided as clean, reproducible Jupyter notebooks, ready for use in VS Code or Jupyter Lab.
-
----
 
 ## Setup Instructions
 
@@ -27,8 +25,8 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
     venv\Scripts\activate
     ```
 
-3. **Install Dependencies**
-    - You can run the first cell in each notebook to install all required packages, or install manually:
+3. **Install Dependencies**  
+    You can run the first cell in each notebook to install all required packages, or install manually:
     ```bash
     pip install pandas numpy scikit-learn nltk joblib matplotlib tensorflow
     ```
@@ -43,16 +41,17 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
     - Open `Approaches/ML_Approach.ipynb` & `Approaches/DL_Approach.ipynb` in VS Code or Jupyter.
     - Run all cells from top to bottom.
 
----
-
 ## Approach
 
 - **ML Pipeline:**  
-  Clean text (lowercase, remove HTML, numbers, punctuation, stopwords) → TF-IDF → Logistic Regression → GridSearchCV for hyperparameters → Evaluation.
-- **DL Pipeline:**  
-  Clean text → Tokenize → Pad sequences → Bidirectional LSTM (Keras) → Hyperparameter tuning (embedding size, LSTM units, batch size, early stopping) → Evaluation.
+```
+  Clean text → TF-IDF → Logistic Regression → GridSearchCV → Evaluation
+```
 
----
+- **DL Pipeline:**  
+```
+  Clean text → Tokenize → Pad sequences → Bidirectional LSTM → Hyperparameter tuning → Evaluation
+```
 
 ## Tools Used
 
@@ -63,8 +62,6 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
 - **TensorFlow/Keras** (tokenization, padding, LSTM)
 - **matplotlib** (plots, confusion matrix)
 - **joblib** (save/load models and vectorizers)
-
----
 
 ## Results
 
@@ -80,13 +77,37 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
     - Training/validation loss and accuracy curves plotted
     - Artifacts saved: `Files/lstm_model.h5`, `Files/tokenizer.joblib`, `Files/encoder.joblib`
 
----
+## Performance Comparison
+
+| Model                             | Accuracy | Precision | Recall | F1-score |
+|-----------------------------------|---------:|----------:|-------:|---------:|
+| ML Approach                       | 0.8826   | 0.8826    | 0.8826 | 0.8826   |
+| DL Approach                       | 0.8358   | 0.8360    | 0.8358 | 0.8358   |
+
+## Confusion Matrices
+
+- ML (Logistic Regression, TF-IDF):
+
+![ML Confusion Matrix](ML_Confusion_Matrix.png)
+
+- DL (Bidirectional LSTM):
+
+![DL Confusion Matrix](DL_Confusion_Matrix.png)
+
+## Training & Validation Curves
+
+- DL (Before Hyperparameter Tuning): combined Loss & Accuracy curves:
+
+![DL - Before Hyperparameter Tuning](DL_Before_HyperParameter_Tuning.png)
+
+- DL (After Hyperparameter Tuning): combined Loss & Accuracy curves:
+
+![DL - After Hyperparameter Tuning](DL_After_HyperParameter_Tuning.png)
 
 ## Artifacts
 
 - All trained models and vectorizers/tokenizers are saved in the `Files/` directory for easy reuse.
 
----
 
 ## Notes
 
@@ -102,7 +123,6 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
   But relatively small for training LSTM embeddings from scratch, making the ML model more effective here.
 
 ## Author
-
 [AnthropoidFHJ](https://github.com/AnthropoidFHJ)  
 **Name:** Ferdous Hasan  
 **Date:** August 16, 2025
