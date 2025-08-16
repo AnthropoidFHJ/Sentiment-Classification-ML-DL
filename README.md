@@ -88,21 +88,21 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
 
 - ML (Logistic Regression, TF-IDF):
 
-![ML Confusion Matrix](ML_Confusion_Matrix.png)
+![ML Confusion Matrix](Output/ML_Confusion_Matrix.png)
 
 - DL (Bidirectional LSTM):
 
-![DL Confusion Matrix](DL_Confusion_Matrix.png)
+![DL Confusion Matrix](Output/DL_Confusion_Matrix.png)
 
 ## Training & Validation Curves
 
 - DL (Before Hyperparameter Tuning): combined Loss & Accuracy curves:
 
-![DL - Before Hyperparameter Tuning](DL_Before_HyperParameter_Tuning.png)
+![DL - Before Hyperparameter Tuning](Output/DL_Before_HyperParameter_Tuning.png)
 
 - DL (After Hyperparameter Tuning): combined Loss & Accuracy curves:
 
-![DL - After Hyperparameter Tuning](DL_After_HyperParameter_Tuning.png)
+![DL - After Hyperparameter Tuning](Output/DL_After_HyperParameter_Tuning.png)
 
 ## Artifacts
 
