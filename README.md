@@ -78,9 +78,6 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
     - Training/validation loss and accuracy curves plotted
     - Artifacts saved: `Files/lstm_model.h5`, `Files/tokenizer.joblib`, `Files/encoder.joblib`
 
-- **State-of-the-art (for reference):**
-    - Transformer models (BERT, RoBERTa, etc.) can reach **94–96%** accuracy on IMDB, but require more compute.
-
 ---
 
 ## Artifacts
