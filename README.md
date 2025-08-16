@@ -52,7 +52,7 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 - **Python** (Jupyter/VS Code)
 - **pandas, numpy** (data handling)
@@ -64,7 +64,7 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
 
 ---
 
-## 📊 Results
+## Results
 
 - **ML (TF-IDF + Logistic Regression):**
     - Typical accuracy: **~88%** on IMDB-style test set (25,000 samples)
@@ -98,8 +98,8 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
 
 ---
 
-## 👤 Author
+## Author
 
-- [AnthropoidFHJ](https://github.com/AnthropoidFHJ)  
+[AnthropoidFHJ](https://github.com/AnthropoidFHJ)  
 Name : Ferdous Hasan  
 Date: August 16, 2025
