@@ -1,4 +1,4 @@
-# Sentiment Classification — ML and DL Approaches
+# Sentiment Classification: ML and DL Approaches
 
 This project demonstrates sentiment classification on movie reviews using two parallel approaches:
 - **Traditional Machine Learning:** TF-IDF features + Logistic Regression (with hyperparameter search)
@@ -19,8 +19,10 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
 2. **Create Python Environment**
     ```bash
     python -m venv venv
+
     # Linux/macOS:
     source venv/bin/activate
+    
     # Windows:
     venv\Scripts\activate
     ```
