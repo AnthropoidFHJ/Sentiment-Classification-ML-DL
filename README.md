@@ -88,11 +88,15 @@ All code is provided as clean, reproducible Jupyter notebooks, ready for use in 
 
 - ML (Logistic Regression, TF-IDF):
 
-![ML Confusion Matrix](Output/ML_Confusion_Matrix.png)
+<p align="center">
+  <img src="Output/ML_Confusion_Matrix.png" width="400"/>
+</p>
 
 - DL (Bidirectional LSTM):
 
-![DL Confusion Matrix](Output/DL_Confusion_Matrix.png)
+<p align="center">
+  <img src="Output/DL_Confusion_Matrix.png" width="400"/>
+</p>
 
 ## Training & Validation Curves
 
